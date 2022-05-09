@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/antoniomd-fi/codeChallegeMissionNodeJS/issues"
   },
-  "homepage": "https://github.com/antoniomd-fi/codeChallegeMissionNodeJS#readme"
+  "homepage": "https://github.com/antoniomd-fi/codeChallegeMissionNodeJS#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
