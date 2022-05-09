@@ -1,0 +1,19 @@
+{
+  "name": "codechallegemissionnodejs",
+  "version": "1.0.0",
+  "description": "Code Challege for Virtual PatnersShip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniomd-fi/codeChallegeMissionNodeJS.git"
+  },
+  "author": "Antonio Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniomd-fi/codeChallegeMissionNodeJS/issues"
+  },
+  "homepage": "https://github.com/antoniomd-fi/codeChallegeMissionNodeJS#readme"
+}
