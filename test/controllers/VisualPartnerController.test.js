@@ -29,7 +29,7 @@ describe ("Tests for Controller", () =>{
 
     test ("2. Get Emails", ()=>{
         const emails = ["Todd@visualpartnership.xyz","Sexton@visualpartnership.xyz","Sharlene@visualpartnership.xyz","Howell@visualpartnership.xyz"]
-        const emails2 =  VisualPartnerController.getStudentsByCertification(true)
+        const emails2 =  VisualPartnerController.getStudentsByCertification()
         expect(emails2[0]).toBe(emails[0])
         expect(emails2[1]).toBe(emails[1])
         expect(emails2[2]).toBe(emails[2])
