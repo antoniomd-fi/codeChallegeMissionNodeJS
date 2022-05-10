@@ -31,7 +31,7 @@ describe ("Tests for Reader", () =>{
     test ("2. Get Emails", ()=>{
         const emails = ["Todd@visualpartnership.xyz","Sexton@visualpartnership.xyz","Sharlene@visualpartnership.xyz","Howell@visualpartnership.xyz"]
         const visualpartners = read.readJsonFile("visualpartners.json");
-        const emails2 =  VisualPartnersService.getEmailsCertificationsStudents(visualpartners);
+        const emails2 =  VisualPartnersService.getEmailsCertificationsStudents(visualpartners,true);
         expect(emails2[0]).toBe(emails[0])
         expect(emails2[1]).toBe(emails[1])
         expect(emails2[2]).toBe(emails[2])
@@ -40,7 +40,7 @@ describe ("Tests for Reader", () =>{
 
     test ("2. Get Students with credits major to 500", ()=>{
         const visualpartners = read.readJsonFile("visualpartners.json");
-        const visualpartner2 =  VisualPartnersService.getStudentsToCredits(visualpartners);
+        const visualpartner2 =  VisualPartnersService.getStudentsToCredits(visualpartners,500);
         expect(visualpartner2.length).toBe(27)
     });
 });
