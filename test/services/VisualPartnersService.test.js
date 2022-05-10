@@ -11,12 +11,12 @@ describe ("Tests for Service", () =>{
             "email": "Todd@visualpartnership.xyz",
             "credits": 508,
             "enrollments": [
-              "Visual Thinking Intermedio",
-              "Visual Thinking Avanzado"
+                "Visual Thinking Intermedio",
+                "Visual Thinking Avanzado"
             ],
             "previousCourses": 1,
             "haveCertification": true
-    };
+        };
         const visualpartners = read.readJsonFile("visualpartners.json");
         const visualpartner2 =  VisualPartnersService.getStudents(visualpartners);
         expect(visualpartner2[0].id).toBe(visualpartner.id);
@@ -29,18 +29,18 @@ describe ("Tests for Service", () =>{
     });
 
     test ("2. Get Emails", ()=>{
-        const emails = ["Todd@visualpartnership.xyz","Sexton@visualpartnership.xyz","Sharlene@visualpartnership.xyz","Howell@visualpartnership.xyz"]
+        const emails = ["Todd@visualpartnership.xyz","Sexton@visualpartnership.xyz","Sharlene@visualpartnership.xyz","Howell@visualpartnership.xyz"];
         const visualpartners = read.readJsonFile("visualpartners.json");
         const emails2 =  VisualPartnersService.getEmailsCertificationsStudents(visualpartners);
-        expect(emails2[0]).toBe(emails[0])
-        expect(emails2[1]).toBe(emails[1])
-        expect(emails2[2]).toBe(emails[2])
-        expect(emails2[3]).toBe(emails[3])
+        expect(emails2[0]).toBe(emails[0]);
+        expect(emails2[1]).toBe(emails[1]);
+        expect(emails2[2]).toBe(emails[2]);
+        expect(emails2[3]).toBe(emails[3]);
     });
 
     test ("2. Get Students with credits major to 500", ()=>{
         const visualpartners = read.readJsonFile("visualpartners.json");
         const visualpartner2 =  VisualPartnersService.getStudentsToCredits(visualpartners,500);
-        expect(visualpartner2.length).toBe(27)
+        expect(visualpartner2.length).toBe(27);
     });
 });
