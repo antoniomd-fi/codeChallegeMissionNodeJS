@@ -1,7 +1,7 @@
 const VisualPartnersService = require("./../../lib/services/VisualPartnersService");
 const read = require ("./../../lib/utils/Reader");
 
-describe ("Tests for Reader", () =>{
+describe ("Tests for Service", () =>{
 
     test ("1.Get all Students" , ()=> {
         const visualpartner = {
